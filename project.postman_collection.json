@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "df58468d-2a99-46f0-9353-e77cc54d3adb",
+		"name": "project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWI5ZTA3MGM5ZWIyNDE1MmUyODdlNDViYjM3M2M0YWM1M2M2NDI4NjU0NmZkZTVhNjI5ZTIxYzA1YzgzNzdjOWQxYzQxMWYyMjVkOGI1NWYiLCJpYXQiOjE2MTY4ODc2NzguOTAwMTg4LCJuYmYiOjE2MTY4ODc2NzguOTAwMTkxLCJleHAiOjE2NDg0MjM2NzguODk1MDM1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZZMP8xe7Vu9smyjXOAECnFpW9AgkxMMYGsblIQB_S2UBANS73JKPJvxISK2wIVFuY8GP4x6McH-qS24mQLbPgpB_Uw8CTdfY3E9FUO3W7ghLS9ltVcn8JeplxzLxSJCfg87PigU2HrYmfSFUjoJQPqPpwtb1TPk6UGeYO5CTrQ6hXkl1fESbLuvEPzVmGa1tObt63Autd8Oxwin5oReJb_QdpTdS6I_Gt8nM8SOZmgGEseKMjlxI2kxXVEiawWZrKVs2TIXXHAQ1kRQF1UOuLaYJJjjp135QFjOWbaQFwhrEAgfEfxFqqsw4k4iQs-mqapnMqSOVu9c2m_j8TY801ftIUmN4GcGOn2NEFCcVWSITjsu-mWze8LNM2Vp95h66JNcjkLHdzYMTp5_1mZXKSG5PTHqO5KqCCXLIeLUXnvzVSjBluv6SuTqlNRwWYvPpmI6_WZUF9Zbkc66ZyBlFti0ul66s40dqMMTbpUWhrL6vhKmcrpzO26objo30_JjyLdWr-6yd6h0jpKPbIVWp5sEXXHV9g9mqHSIliTC5nnsM4JyHMfjdG-MKKADpafXMFsjjHSUjS53Tu_LyfFQ9HjTIX3-lY30qchSoDFk2pb9SLFBcQ5LP2gnFy-reAA-d5Ub6QY50HxTuJCGB28Y4gO_GDBNc9mm3DeNySD3229M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john@doe.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "john@doe.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/articles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWI5ZTA3MGM5ZWIyNDE1MmUyODdlNDViYjM3M2M0YWM1M2M2NDI4NjU0NmZkZTVhNjI5ZTIxYzA1YzgzNzdjOWQxYzQxMWYyMjVkOGI1NWYiLCJpYXQiOjE2MTY4ODc2NzguOTAwMTg4LCJuYmYiOjE2MTY4ODc2NzguOTAwMTkxLCJleHAiOjE2NDg0MjM2NzguODk1MDM1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZZMP8xe7Vu9smyjXOAECnFpW9AgkxMMYGsblIQB_S2UBANS73JKPJvxISK2wIVFuY8GP4x6McH-qS24mQLbPgpB_Uw8CTdfY3E9FUO3W7ghLS9ltVcn8JeplxzLxSJCfg87PigU2HrYmfSFUjoJQPqPpwtb1TPk6UGeYO5CTrQ6hXkl1fESbLuvEPzVmGa1tObt63Autd8Oxwin5oReJb_QdpTdS6I_Gt8nM8SOZmgGEseKMjlxI2kxXVEiawWZrKVs2TIXXHAQ1kRQF1UOuLaYJJjjp135QFjOWbaQFwhrEAgfEfxFqqsw4k4iQs-mqapnMqSOVu9c2m_j8TY801ftIUmN4GcGOn2NEFCcVWSITjsu-mWze8LNM2Vp95h66JNcjkLHdzYMTp5_1mZXKSG5PTHqO5KqCCXLIeLUXnvzVSjBluv6SuTqlNRwWYvPpmI6_WZUF9Zbkc66ZyBlFti0ul66s40dqMMTbpUWhrL6vhKmcrpzO26objo30_JjyLdWr-6yd6h0jpKPbIVWp5sEXXHV9g9mqHSIliTC5nnsM4JyHMfjdG-MKKADpafXMFsjjHSUjS53Tu_LyfFQ9HjTIX3-lY30qchSoDFk2pb9SLFBcQ5LP2gnFy-reAA-d5Ub6QY50HxTuJCGB28Y4gO_GDBNc9mm3DeNySD3229M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
