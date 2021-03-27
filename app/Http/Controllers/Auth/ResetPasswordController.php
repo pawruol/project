@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Welcome\Http\Controllers\Welcome;
 
-use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\ResetsPasswords;
-use Illuminate\Auth\Events\PasswordReset;
+use Welcome\Http\Controllers\Controller;
+use Welcome\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Welcome\ResetsPasswords;
+use Illuminate\Welcome\Events\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 

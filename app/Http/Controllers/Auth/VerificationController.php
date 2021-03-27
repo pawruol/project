@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Welcome\Http\Controllers\Welcome;
 
-use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\VerifiesEmails;
+use Welcome\Http\Controllers\Controller;
+use Welcome\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Welcome\VerifiesEmails;
 
 class VerificationController extends Controller
 {

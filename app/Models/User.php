@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace Welcome\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Welcome\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Foundation\Welcome\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 
@@ -44,6 +44,6 @@ class User extends Authenticatable
 
     public function sendPasswordResetNotification($token)
     {
-        $this->notify(new \App\Notifications\MailResetPasswordNotification($token));
+        $this->notify(new \Welcome\Notifications\MailResetPasswordNotification($token));
     }
 }

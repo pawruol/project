@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace Welcome\Providers;
 
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
+use Illuminate\Welcome\Events\Registered;
+use Illuminate\Welcome\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
 

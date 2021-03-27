@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Welcome\Http\Middleware;
 
-use Illuminate\Auth\Middleware\Authenticate as Middleware;
+use Illuminate\Welcome\Middleware\Authenticate as Middleware;
 
 class Authenticate extends Middleware
 {

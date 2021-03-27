@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\Auth\ApiAuthController;
-use App\Http\Controllers\ArticleController;
+use Welcome\Http\Controllers\Welcome\ApiAuthController;
+use Welcome\Http\Controllers\ArticleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
